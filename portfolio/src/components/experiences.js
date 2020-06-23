@@ -9,17 +9,21 @@ const Experiences = () => {
       allContentfulWorkExperiences(
         sort: {
           fields:order,
-          order:DESC  
+          order:ASC  
         }
       ) {
         edges{
           node {
+            id,
             workplace,
             workTitle,
             startYear,
             endYear,
             location,
-            order
+            order,
+            description {
+              json
+            }
           }
         }
       }
@@ -31,7 +35,7 @@ const Experiences = () => {
     <div className="timeline">
       {
         data.map((item) => (
-          <ExperienceItem item={item.node} />
+          <ExperienceItem key={item.node.id} item={item.node} />
         ))
       }
 

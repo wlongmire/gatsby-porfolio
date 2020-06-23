@@ -9,8 +9,9 @@ const Head = () => {
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script defer src={"./../../js/fontawesome-all.js"}></script>
-
-      <script type="text/javascript" src={"./../../js/plugins/jquery-3.4.1.min.js"}></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
       <script type="text/javascript" src={"./../../js/plugins/jquery-scrollTo/jquery.scrollTo.min.js"}></script>
       <script type="text/javascript" src={"./../../js/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"}></script>
       <script type="text/javascript" src={"./../../js/plugins/popper.min.js"}></script>

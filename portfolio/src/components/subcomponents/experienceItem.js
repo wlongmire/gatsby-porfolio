@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const ExperienceItem = ({ item }) => {
   return (
@@ -14,7 +15,7 @@ const ExperienceItem = ({ item }) => {
       </div>
 
       <div className="job-desc">
-
+        {documentToReactComponents(item.description.json)}
       </div>
     </div>
   );
