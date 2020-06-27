@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import ExperienceItem from './subcomponents/experienceItem';
+import ExperienceItem from './experienceItem';
 
 const Experiences = () => {
   const data = useStaticQuery(graphql`

@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from './../components/layout';
-import Experiences from './../components/experiences';
-import Education from './../components/education';
-import Skills from './../components/skills';
+import Experiences from './../components/Experience/experiences';
+import Education from '../components/Education/education';
+import Skills from './../components/Skills/skills';
+import OtherSkills from './../components/otherSkills';
 import Testimonials from './../components/testimonials';
-import Portfolio from './../components/portfolio';
+import Portfolio from './../components/Portfolio/portfolio';
 import Contact from './../components/contact';
 import Footer from './../components/footer';
 
@@ -15,7 +16,7 @@ const IndexPage = () => {
         <Experiences />
         <Education />
         <Skills />
-        <Testimonials />
+        <OtherSkills />
         <Portfolio />
         <Contact />
       </div>
